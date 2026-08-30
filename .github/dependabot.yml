@@ -1,0 +1,13 @@
+# Dependabot for a dormant tree: no scheduled bumps (limit 0 disables
+# version updates); security PRs still open, grouped into one.
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 0
+    groups:
+      security:
+        applies-to: security-updates
+        patterns: ['*']
